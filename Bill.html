@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill System</title>
+    <link rel="stylesheet" href="Bill.css">
+</head>
+<body>
+    <header>
+         <div class="head">
+            <h2>Billing system</h2>
+        </div>
+            <div class="input-detail">
+                <label>Customer name : &nbsp;</label>
+                <input type="text" id="cname" placeholder="Enter Customer name"><br>
+                <label>Dal Quantity : &nbsp; &nbsp;&nbsp; &nbsp;</label>
+                <input type="number" placeholder="Enter Daal Quantity" id="dalQuant"><br>
+                <label>Subji Quantity : &nbsp; &nbsp;</label>
+                <input type="number" placeholder="Enter Subji Quantity" id="sbjiQuant"><br>
+                <label>Chapati Quantity : </label>
+                <input type="number" placeholder="Enter Chapati Quantity" id="rotiQuant"><br>
+                <label>Rice Quantity : &nbsp; &nbsp; </label>
+                <input type="number" placeholder="Enter Rice Quantity" id="chavalQuant"><br>
+            </div>
+            <div class="btn">
+                <button onclick="bill()">Submit</button>
+            </div>
+            <div class="cname">
+                <h3>Custmer name : <label id="scname"></label></h3>
+            </div>
+            
+            <div class="table1">
+            <table border="2px">
+                <tr>
+                  <th>S No</th>
+                  <th>Item</th>
+                  <th>Price</th>
+                  <th>Quantity</th>
+                  <th>Amount</th>
+                </tr>
+        
+                <tr>
+                    <td>1</td>
+                    <td>Dal</td>
+                    <td>40</td>
+                    <td><label id="sdlq"></label></td>
+                    <td><label id="sdala"></label></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Subji</td>
+                    <td>50</td>
+                    <td><label id="sSubjiQuantity"></label></td>
+                    <td><label id="sSubjiQuant"></label></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Chapati</td>
+                    <td>5</td>
+                    <td><label id="sRotiQuantity"></label></td>
+                    <td><label id="sRotiQuant"></label></td>
+                </tr>
+                   
+                <tr>
+                    <td>4</td>
+                    <td>Rice</td>
+                    <td>60</td>
+                    <td><label id="sChavalQuantity"></label></td>
+                    <td><label id="sChavalQuant"></label></td>
+                </tr>
+             </table>
+            </div>
+            <div class="total-detail">
+                <h3>Total Amount : <label id="total"></label></h3>
+                <h3>Total GST : <label id="gst"></label></h3>
+                <h1>Total payable amount : <label id="finalTotal"></label></h1>
+            </div>
+    </header>
+
+    <script src="script.js"></script>
+</body>
+</html>
